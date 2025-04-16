@@ -20,8 +20,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--color-dark-3    );
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     height: 100vh;
 }
 
@@ -193,12 +193,6 @@ ul li a{
     padding: 5px;
     margin: 5px 0;
     font-size: 14px;
-}
-
-#reloj{
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 
@@ -542,4 +536,69 @@ button:hover {
 
 .form-agregar-editar button:hover {
     background-color: #146B91;
+}
+
+
+
+.login-admin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegura que el contenedor ocupe toda la altura disponible */
+}
+
+#admin-login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ajusta el tamaño según tus necesidades */
+}
+#admin-login-form h1{
+    margin-bottom: 1rem;
+  color: #1984B3;
+  text-align: center;
+}
+
+#admin-login-form input{
+    width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#admin-login-form button{
+    background-color: #23B7F6;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#admin-login-form button:hover{
+    background-color: #146B91;
+}
+
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .login_container, .visitantes-container {
+        width: 90%;
+        margin: 20px auto;
+    }
 }

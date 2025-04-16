@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso de Administradores</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Identificate</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#" id="config-btn"><i class="fas fa-cog"></i></a>
+                    <div class="dropdown-content" id="config-panel">
+                        <label for="lang-select">Idioma</label>
+                        <select id="lang-select">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+
+                        <label for="clock-toggle">
+                            <input type="checkbox" id="clock-toggle" checked> Mostrar reloj
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                </li>
+                <li onclick="window.location.href='principal.html'">
+                <i class="fas fa-sign-out-alt icon"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-admin-container">
+        <form id="admin-login-form">
+            <h1>Ingreso al panel de administrador</h1>
+            <label for="user-admin-login">Ingresa tus credenciales</label>
+            <input type="text" id="user-admin-login" placeholder="Usuario" required>
+            <input type="password" id="pass-admin-login" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+            <p id="error-message" style="color: red; display: none;">Credenciales incorrectas</p>
+            <p id="success-message" style="color: green; display: none;">Acceso concedido</p>
+        </form>
+    </div>
+    <script src="/login-admin.js"></script>
+</body>
+</html>
