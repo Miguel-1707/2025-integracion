@@ -672,6 +672,20 @@ button:hover {
 /* Estilo para tabletas */
 @media screen and (max-width: 768px) {
 
+    .principal_container {
+        display: flex;
+        flex-direction: column;    /* Colocamos las tarjetas en columna */
+        justify-content: center;    /* Centrado horizontal */
+        align-items: center;       /* Centrado vertical */
+        gap: 20px;                 /* Espacio entre tarjetas */
+        padding: 20px; 
+    }
+
+    .card {
+        width: 100%;               /* Ocupa el 100% del contenedor */
+        max-width: 350px;          /* Establecemos un máximo para que no se vean excesivamente grandes */
+        margin: 10px 0;            /* Espacio entre tarjetas */
+    }
     header h1 {
         font-size: 30px;
     }
@@ -762,4 +776,4 @@ button:hover {
         width: 300px;
     }
 }
-    
+
