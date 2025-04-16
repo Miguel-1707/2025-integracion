@@ -589,6 +589,22 @@ button:hover {
 /* Estilo base para móviles */
 @media screen and (max-width: 600px) {
 
+
+    .principal_container {
+        display: flex;
+        flex-direction: column;    /* Colocamos las tarjetas en columna */
+        justify-content: center;    /* Centrado horizontal */
+        align-items: center;       /* Centrado vertical */
+        gap: 20px;                 /* Espacio entre tarjetas */
+        padding: 20px; 
+    }
+
+    .card {
+        width: 100%;               /* Ocupa el 100% del contenedor */
+        max-width: 350px;          /* Establecemos un máximo para que no se vean excesivamente grandes */
+        margin: 10px 0;            /* Espacio entre tarjetas */
+    }
+
     body {
         background-color: var(--color-dark-3);
     }
@@ -625,12 +641,6 @@ button:hover {
         flex-direction: column;
         gap: 10px;
         margin-top: 20px;
-    }
-
-    .card {
-        width: 100%;
-        height: auto;
-        padding: 15px;
     }
 
     #reloj {
