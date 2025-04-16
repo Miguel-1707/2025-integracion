@@ -586,19 +586,180 @@ button:hover {
     background-color: #146B91;
 }
 
-@media (max-width: 600px) {
+/* Estilo base para móviles */
+@media screen and (max-width: 600px) {
+
+    body {
+        background-color: var(--color-dark-3);
+    }
+
+    .login_container {
+        width: 90%;
+        padding: 30px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .input_container {
+        margin-bottom: 15px;
+    }
+
+    .input_fields label {
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
     .cards {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
     }
 
     .card {
-        width: 90%;
+        width: 100%;
         height: auto;
+        padding: 15px;
     }
 
-    .login_container, .visitantes-container {
+    #reloj {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    .principal_container {
+        margin-top: 20px;
+    }
+
+    .visitantes-container {
         width: 90%;
-        margin: 20px auto;
+    }
+
+    .form-agregar-editar {
+        padding: 1rem;
+        margin-top: 20px;
+    }
+
+    .empleado-info {
+        width: 90%;
+    }
+
+}
+
+/* Estilo para tabletas */
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .login_container {
+        width: 80%;
+        padding: 35px;
+    }
+
+    .input_container {
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 45%;
+        padding: 20px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .principal_container {
+        margin-top: 30px;
+    }
+
+    .visitantes-container {
+        width: 80%;
+    }
+
+    .empleado-info {
+        width: 80%;
+    }
+
+    .form-agregar-editar {
+        padding: 1.5rem;
+    }
+
+    .card:hover {
+        background-color: var(--color-primary);
     }
 }
+
+/* Estilo para pantallas grandes (escritorios) */
+@media screen and (min-width: 1024px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .login_container {
+        width: 420px;
+    }
+
+    .cards {
+        margin-top: 80px;
+        gap: 20px;
+    }
+
+    .card {
+        width: 300px;
+        height: 200px;
+    }
+
+    .empleado-info {
+        width: 400px;
+    }
+
+    .visitantes-container {
+        width: 400px;
+    }
+
+    .form-agregar-editar {
+        max-width: 500px;
+    }
+
+}
+
+/* Estilo para pantallas muy grandes */
+@media screen and (min-width: 1200px) {
+
+    .cards {
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
+    
