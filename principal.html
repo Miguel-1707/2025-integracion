@@ -36,14 +36,6 @@
         </nav>
     </header>
 
-    <div id="config-panel" class="hidden">
-        <h2>Configuración</h2>
-        <div>
-            <label for="lang-select">idioma</label>
-        </div>
-
-    </div>
-
 
     <div id="reloj">
         <p id="hora"></p>
@@ -51,14 +43,22 @@
 
     <main class="principal_container">
         <div class="cards">
-            <div class="card" onclick="window.location.href='empleados.html'">
-                <h2>Empleados</h2>
+            <div class="card-expandible" onclick="toggleOptions('empleados-options')">
+                <h2 >Empleados</h2>
                 <p>Accede con tu codigo de empleado.</p>
+                <div id="empleados-options" class="options hidden">
+                    <button class="onclick-entrada" onclick="window.location.href='empleadosEntradas.html?tipo=entrada'">Entradas</button>
+                    <button class="onclick-salidas" onclick="window.location.href='empleadosSalidas.html?tipo=salida'">Salidas</button>
+                </div>
             </div>
 
-            <div class="card" onclick="window.location.href='visitantes.html'">
+            <div class="card-expandible" onclick="toggleOptions('visitantes-options')">
                 <h2>Visitantes</h2>
                 <p>Ingresa como visitante</p>
+                <div id="visitantes-options" class="options hidden">
+                    <button class="onclick-entrada" onclick="window.location.href='visitantesEntradas.html?tipo=entrada'">Entradas</button>
+                    <button class="onclick-salidas" onclick="window.location.href='visitantesSalidas.html?tipo=salida'">Salidas</button>
+                </div>
             </div>
 
             <div class="card" onclick="window.location.href='login-admins.html'">
@@ -67,5 +67,6 @@
             </div>
         </div>
     </main>
+    <script src="/principal.js"></script>
 </body>
 </html>

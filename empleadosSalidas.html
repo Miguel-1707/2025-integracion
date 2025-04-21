@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"; integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hasta luego Empleado </h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#" id="config-btn"><i class="fas fa-cog"></i></a>
+                    <div class="dropdown-content" id="config-panel">
+                        <label for="lang-select">Idioma</label>
+                        <select id="lang-select">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+
+                        <label for="clock-toggle">
+                            <input type="checkbox" id="clock-toggle" checked> Mostrar reloj
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                </li>
+                <li onclick="window.location.href='principal.html'">
+                <i class="fas fa-sign-out-alt icon"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="reloj">
+        <p id="hora"></p>
+    </div>
+
+    <main>
+
+        <div class="empleado-info" id="empleado-form-container">
+            <h2>Por favor, ingresa tu código de empleado</h2>
+            <form action="javascript:void(0);" id="form-empleado">
+                <label for="codigo-empleado">Código de empleado: </label>
+                <input type="text" id="codigo-empleado" name="codigo-empleado" required>
+                <button type="submit">Retirarse</button>
+            </form>
+        </div>
+
+        <div id="bienvenida-empleado" class="bienvenida" style="display: none;">
+            <p>¡Hasta pronto, <span id="nombre-empleado">[Nombre del empleado]</span></p>
+        </div>
+    </main>
+    <script src="/empleados.js"></script>
+</body>
+</html>

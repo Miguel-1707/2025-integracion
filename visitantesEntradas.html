@@ -39,19 +39,10 @@
     <main class="visitantes-container">
         <h3>Por favor registra tus datos para poder ingresar</h3>
         <form class="form-visitante">
-            <label for="nombre-visitante" class="nombre-visitante">Ingresa tu nombre/s</label>
-            <input type="text" id="nombre-visitante" name="nombre-visitante" required>
-            <label for="apellidos-visitante" class="apellidos-visitante">Ingresa tus apellidos</label>
-            <input type="text" id="apellidos-visitante" name="apellidos-visitante" required>
-            <label for="identificacion-visitante" class="identificacion-visitante">Ingresa tu identificacion</label>
-            <input type="text" id="identificacion-visitante" name="identificacion-visitante" required>
-            <label for="telefono-visitante" class="telefono-visitante">Ingresa tu telefono</label>
-            <input type="text" name="telefono-visitante" id="telefono-visitante" required>
-            <label for="persona-visita" class="persona-visita">Ingresa el nombre de la persona que visitas</label>
-            <input type="text" id="persona-visita" name="persona-visita" required>
-            <label for="motivo-visita" class="motivo-visita">Ingresa el motivo de tu visita</label>
-            <input type="text" id="motivo-visita" name="motivo-visita" required>
-            <button type="submit">Registrar Visita</button>
+         <label for="preregistro">Porfavor, ingresa tu codigo de preregistro</label>
+         <input type="text" id="preregistro" name="preregistro" required placeholder="Ingrese su codigo de preregistro">
+         <button>Ingresar</button>
+            <p id="mensaje_Error" class="error"></p>
         </form>
     </main>
 

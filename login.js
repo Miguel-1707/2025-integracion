@@ -7,7 +7,7 @@ function validar(){
     const errormsg = document.getElementById("mensaje_Error");
 
     if(usuarioingresado === usuariovalidado && contraseñaingresada === contraseñavalidada){
-        window.location.href = "principal.html";
+        window.location.href = "principal.html"; // Redirige a la página principal
     }else{
         errormsg.style.display = "block";
     }

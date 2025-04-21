@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"; integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Visitantes</title>
+</head>
+<body>
+    <header>
+        <h1>Vuelva pronto!</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#" id="config-btn"><i class="fas fa-cog"></i></a>
+                    <div class="dropdown-content" id="config-panel">
+                        <label for="lang-select">Idioma</label>
+                        <select id="lang-select">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+
+                        <label for="clock-toggle">
+                            <input type="checkbox" id="clock-toggle" checked> Mostrar reloj
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                </li>
+                <li onclick="window.location.href='principal.html'">
+                <i class="fas fa-sign-out-alt icon"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="visitantes-container">
+        <h3>Por favor, registre su salida!</h3>
+        <form class="form-visitante">
+            <label for="nombre-visitante" class="nombre-visitante">Ingresa tu nombre/s</label>
+            <input type="text" id="nombre-visitante" name="nombre-visitante" required>
+            <label for="apellidos-visitante" class="apellidos-visitante">Ingresa tus apellidos</label>
+            <input type="text" id="apellidos-visitante" name="apellidos-visitante" required>
+            <button type="submit">Registrar salida</button>
+        </form>
+    </main>
+
+    <div class="bienvenida-visitantes" style="display: none;">
+        <h3>Hasta luego <span id="nombre-visitante-mensaje">[nombre-visitante]</span></h3>
+        <p>Gracias por visitarnos, esperamos que hayas tenido una gran experiencia con nosotros.!</p> 
+    </div>
+    
+</body>
+</html>
