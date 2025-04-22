@@ -36,10 +36,11 @@ body{
     display: flex;
     justify-content:center;
     align-items:center;
-    font-size: 1.5rem;
+    font-size: 3.5rem;
     font-weight:bold;
     color:#146B91;
     margin-bottom:20px;
+    padding: 30px;
 }
 
 
@@ -358,8 +359,6 @@ margin-top: 50px;
     font-size:50px;
     color:var(--color-primary);
 }
-
-
 
 
 
