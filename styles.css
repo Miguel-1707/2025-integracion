@@ -1,12 +1,12 @@
 :root{
-    --color-primary: #23B7F6;
-    --color-secondary: #1E9ED4; 
-    --color-tertiary: #23BCFF; 
-    /* Colores de contraste */
-    --color-dark-1: #1984B3;
-    --color-dark-2: #146B91;
-    --color-dark-3: #0F526F;
-    --color-dark-4: #072c3b;
+    --color-primary: #FFB703;        /* Antes: #23B7F6 – ahora un amarillo cálido para destacar botones o enlaces */
+    --color-secondary: #FB8500;      /* Antes: #1E9ED4 – un naranja vibrante para tarjetas u opciones activas */
+    --color-tertiary: #219EBC;       /* Antes: #23BCFF – un azul profundo de transición */
+    
+    --color-dark-1: #023047;         /* Antes: #1984B3 – azul noche fuerte, ideal para headers */
+    --color-dark-2: #264653;         /* Antes: #146B91 – azul grisáceo sobrio para backgrounds */
+    --color-dark-3: #1B263B;         /* Antes: #0F526F – azul oscuro más neutral como fondo general */
+    --color-dark-4: #0D1B2A;       
 }
 
 
@@ -32,17 +32,29 @@ body{
 #reloj{
     width: 100%;
     height:60px;
-    background-color: #e0f7ff;
     display: flex;
     justify-content:center;
     align-items:center;
     font-size: 3.5rem;
     font-weight:bold;
-    color:#146B91;
-    margin-bottom:20px;
+    color:#264653;
     padding: 30px;
+    text-align: center;
 }
 
+.reloj-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    background-color: #e0f7ff;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 5px;
+    text-align: center;
+    padding: 10px;
+}
 
 .login_container{
     background-color: #fff;
@@ -136,7 +148,7 @@ align-items: center;
 }
 
 header h1{
-    color: #23BCFF;
+    color: #219EBC;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
     margin: 20px 10px;
 }
@@ -316,7 +328,7 @@ margin-top: 50px;
 
 .empleado-info h2{
     text-align:center;
-    color: #1984B3;
+    color: #023047;
 
 }
 
@@ -340,7 +352,7 @@ margin-top: 50px;
 #form-empleado button{
     margin-top:20px;
     padding:10px;
-    background-color:#1E9ED4;
+    background-color:#FB8500;
     color:white;
     border:none;
     border-radius:8px;
@@ -350,7 +362,7 @@ margin-top: 50px;
 
 
 #form-empleado button:hover{
-    background-color:#146B91;
+    background-color:#264653;
 }
 
 .bienvenida{
@@ -556,14 +568,14 @@ button:hover {
 
 .form-agregar-editar input:focus {
     outline: none;
-    border-color: #1984B3;
-    box-shadow: 0 0 5px #23B7F6;
+    border-color: #023047;
+    box-shadow: 0 0 5px #FFB703;
 }
 
 .form-agregar-editar button {
     display: block;
     width: 100%;
-    background-color: #1984B3;
+    background-color: #023047;
     color: white;
     padding: 0.9rem;
     border: none;
@@ -574,7 +586,7 @@ button:hover {
 }
 
 .form-agregar-editar button:hover {
-    background-color: #146B91;
+    background-color: #264653;
 }
 
 
@@ -598,7 +610,7 @@ button:hover {
 }
 #admin-login-form h1{
     margin-bottom: 1rem;
-  color: #1984B3;
+  color: #023047;
   text-align: center;
 }
 
@@ -611,7 +623,7 @@ button:hover {
 }
 
 #admin-login-form button{
-    background-color: #23B7F6;
+    background-color: #FFB703;
     color: white;
     padding: 10px;
     width: 100%;
@@ -622,7 +634,7 @@ button:hover {
 }
 
 #admin-login-form button:hover{
-    background-color: #146B91;
+    background-color: #264653;
 }
 
 /* Estilo base para móviles */
