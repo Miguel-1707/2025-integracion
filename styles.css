@@ -29,6 +29,38 @@ body{
     height: 100vh;
 }
 
+/* Estilos para el tema claro */
+body.light-theme {
+    background-color: #f5f5f5;
+    color: #1a1919;
+  }
+
+
+.light-theme .card-expandible{
+    background-color: #f5d56b;
+    color: #000;
+}
+
+.light-theme .card{
+    background-color: #f5d56b;
+    color: #000;
+}
+
+.light-theme header,
+.light-theme footer {
+  background-color: #c9c8db;
+  color: #000;
+}
+
+.light-theme .card h3,
+.light-theme .card p,
+.light-theme .card-expandible h2,
+.light-theme .card-expandible p {
+  color: #000;
+}
+
+
+
 #reloj{
     width: 100%;
     height:60px;
@@ -39,7 +71,7 @@ body{
     font-weight:bold;
     color:#264653;
     padding: 30px;
-    text-align: center;
+    text-align: center;;
 }
 
 .reloj-container{
@@ -51,7 +83,7 @@ body{
     background-color: #e0f7ff;
     margin: 0 auto;
     border-radius: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     text-align: center;
     padding: 10px;
 }
@@ -65,6 +97,12 @@ body{
     text-align: center;
 
     margin: 80px auto;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
 }
 
 h1{
@@ -220,7 +258,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
-margin-top: 50px;
+margin-top:auto auto;
 }
 
 .cards{
@@ -262,23 +300,48 @@ margin-top: 50px;
     padding: 20px;
 }
 
+.options {
+    display: none;
+    margin-top: 10px;
+  }
+  
+  .options button {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #1E9ED4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .options button:hover {
+    background-color: #1984B3;
+  }
+  
+  .options.show {
+    display: block;
+  }
+  
+
 .onclick-entrada{
-    background-color: rgb(14, 177, 14);
+    background-color: rgb(21, 109, 21) !important; 
 }
 
 .onclick-entrada:hover{
-    background-color: green;
+    background-color: rgb(7, 58, 7) !important;
 }
 
 .onclick-salidas{
-    background-color: rgb(245, 102, 102);
+    background-color: rgb(199, 2, 2) !important;
 }
 
 .onclick-salidas:hover{
-    background-color: red;
+    background-color: rgb(80, 0, 0) !important;
 }
 
-.card:hover{
+.card:hover, .card-expandible:hover{
     background-color: var(--color-primary);
 }
 
@@ -297,7 +360,7 @@ margin-top: 50px;
     cursor: pointer;
     background: none;
     border: none;
-    color: white;
+    color: yellow;
     transition: color 0.3s ease;
     padding-top:0;
 }
@@ -310,7 +373,7 @@ margin-top: 50px;
     display: none;
 }
 
-#config-btn:hover + #config-panel{
+#config-btn{
     display: block;
 }
 
@@ -637,6 +700,24 @@ button:hover {
     background-color: #264653;
 }
 
+
+
+
+.footer{
+    background-color: var(--color-dark-2);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer a{
+    color: var(--color-primary);
+    text-decoration: none;
+}
 /* Estilo base para móviles */
 @media screen and (max-width: 600px) {
 

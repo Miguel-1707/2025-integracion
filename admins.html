@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Administración</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <title>Administración</title>
 </head>
 <body>
     <header>
+        <img src="/assets/Cafecut.jpg" alt="Logotipo Cafe Cut Central" class="logo">
         <h1>Bienvenido administrador</h1>
         <nav>
             <ul>
@@ -42,15 +43,16 @@
             <h2>Estadisticas de accesos</h2>
             <p>Resumen de ingresos y egresos.</p>
             <div class="chart-container">
-                <!-- graficas de entradas y salidas -->
-                 <p>[Grafica de entradas/salidas]</p>
-            </div>
+                <canvas id="accessStatsChart"></canvas></div>
         </section>
 
         <section id="reportes">
             <h2>Reportes periodicos</h2>
-            <button>Generar Reporte diario</button>
-            <button>Generar Reporte Semanal</button>
+            <button id="btn-reporte-diario">Generar Reporte diario</button>
+            <button id="btn-reporte-semanal">Generar Reporte Semanal</button>
+        
+            <div id="report-results" style="margin-top: 20px;">
+                <p>Selecciona un reporte para visualizarlo.</p> </div>
         </section>
         
         <section class="admin-section">
@@ -92,5 +94,9 @@
     </main>
 
     <script src="/admins.js"></script>
+    <footer class="footer">
+        <p>&copy; 2025 Centro Universitario De Tonala. Todos los derechos reservados.</p>
+        <p>Desarrollado por: <a href="https://github.com/Miguel-1707">Miguel Gonzalez De Anda</a>, <a href="https://github.com/HectorG117">Hector Gabriel Hernandez Garcia</a> y <a href="">Benjamin Orozco Palafox</a></p>
+    </footer>
 </body>
 </html>
